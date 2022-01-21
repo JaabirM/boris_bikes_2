@@ -1,6 +1,9 @@
 class Bike
-  def working?
-    return "This bike works!"
+  def report_broken
+    @broken = true
   end
 
+  def broken?
+    @broken
+  end
 end

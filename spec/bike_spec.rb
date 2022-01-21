@@ -1,8 +1,8 @@
 require 'bike'
 
 describe Bike do
-  bike1 = Bike.new
-  it "is it working?" do
-    expect(bike1).to respond_to(:working?)
+  it "can be reported" do
+    subject.report_broken
+    expect(subject).to be_broken
   end
 end
